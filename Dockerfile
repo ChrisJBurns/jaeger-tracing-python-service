@@ -15,4 +15,4 @@ COPY src/ .
 
 EXPOSE 8092
 # command to run on container start
-CMD [ "python", "./server.py" ]
+CMD [ "opentelemetry-instrument", "python", "./server.py" ]
